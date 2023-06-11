@@ -3,6 +3,8 @@ package com.example.iaproject
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -29,11 +31,12 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     IAProjectTheme {
-
+        Box(modifier = Modifier.fillMaxSize()) {
+            Text(text = "Hola")
+        }
     }
 }
